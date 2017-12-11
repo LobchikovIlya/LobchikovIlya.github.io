@@ -1,0 +1,269 @@
+*{
+    margin:0; 
+    padding:0;  
+}    
+body {
+    background: url(https://preview.ibb.co/grcLtR/Layer_57.png) no-repeat center top/cover;
+}
+
+wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    min-height: 400px;
+    margin: auto;
+}
+
+.to_top a {
+    position: absolute;
+    widows: 20px;
+    height: 20px;
+    margin: 50%;
+    left: 470px;
+    top: 300px;
+}
+
+.to_top a:hover {
+    border-radius: 5px solid green;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 235px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item a {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: Pathway Gothic One;
+}
+
+.item a:hover {
+    color: #263555;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    border:2px solid green; 
+}
+
+.logo {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+}
+
+.logo a {
+    display: block;
+    position: absolute;
+    font-family: Dorsa;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 70px;
+    color: #263555;
+    left: 16%;
+    top: 24%;
+}
+
+li {
+    list-style: none;
+}
+
+.submenu {
+   /* display: none;*/
+}
+
+.submenu  {
+    color: rgb(175, 159, 159);
+    font-size: 18px;
+}
+
+ nav:hover .submenu {
+    display: block;
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 150px;
+    top: 145px;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+  nav:hover .submenu::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid white;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: block;
+    top: -9px;
+    left: 35px;
+}
+
+.main {
+   
+}
+
+
+
+.first {
+    /* display:flex;*/
+    padding: 10px 10px;
+}
+.first:hover{
+
+    opacity:0.5;
+    cursor:url(https://image.ibb.co/nLPWub/icon.png);
+     
+}
+
+
+
+.text {
+    display: block;
+    width: auto;
+    height: auto;
+    left: 40px;
+    top: 5px;
+    background: #fff;
+    position: absolute;
+    font-size: 30px;
+    font-family: Pathway Gothic One;
+    color: #263555;
+}
+
+footer {
+    margin: auto;
+    max-width: 1024px;
+    height: 200px;
+    background: #263555;
+    padding-top: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.contact a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    font-family: Pathway Gothic One;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.page a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    font-family: Pathway Gothic One;
+    font-size: 18px;
+    color: #fff;
+    margin: auto;
+}
+
+.partners a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100px;
+    font-family: Pathway Gothic One;
+    font-size: 18px;
+    color: #fff;
+    margin: auto;
+}
+
+.servis a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+    font-family: Pathway Gothic One;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom:40px; 
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(https://image.ibb.co/ciwTsb/sprite_social_buttons.png)0 0 no-repeat;
+}
+
+.menu .google {
+    background-position: -41px 0;
+}
+
+.menu .init {
+    background-position: -82px 0;
+}
+
+.menu .twitter {
+    background-position: -123px 0;
+}
+
+.menu a:hover {
+    background-position: 0 -40px;
+}
+
+.menu .google:hover {
+    background-position: -41px -40px;
+}
+
+.menu .init:hover {
+    background-position: -82px -40px;
+}
+
+.menu .twitter:hover {
+    background-position: -123px -40px;
+}
