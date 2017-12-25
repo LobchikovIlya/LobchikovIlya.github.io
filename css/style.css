@@ -1,178 +1,170 @@
-*{
-    margin:0; 
-    padding:0;  
-}    
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: url(https://preview.ibb.co/grcLtR/Layer_57.png) no-repeat center top/cover;
+    background: url(https://preview.ibb.co/grcLtR/Layer_57.png)no-repeat center top/cover;
 }
 
-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 1024px;
-    min-height: 400px;
-    margin: auto;
-}
-
-.to_top a {
-    position: absolute;
-    widows: 20px;
-    height: 20px;
-    margin: 50%;
-    left: 470px;
-    top: 300px;
-}
-
-.to_top a:hover {
-    border-radius: 5px solid green;
-}
-
-header {
-    display: flex;
-    width: 100%;
-    height: 235px;
-}
-
-a {
+a,
+li {
     text-decoration: none;
+    list-style: none;
+    color: #fff;
 }
 
-.item a {
-    color: white;
-    font-size: 26px;
+.wrapper {
+    display: block;
+    max-width: 1024px;
+    min-height: 600px;
+    margin: auto;
+    position: relative;
+
+}
+
+nav {
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
+    font-size: 70px;
+    font-family: Dorsa;
+    color: #263555;
+}
+
+.menu_left {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_right {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    width: auto;
+    height: 2em;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
     font-family: Pathway Gothic One;
+    position: relative;
+   
 }
 
 .item a:hover {
     color: #263555;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
-    padding-top: 20px;
-    position: relative;
-    border:2px solid green; 
-}
-
-.logo {
-    position: relative;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: #fff;
-    text-align: center;
-}
-
-.logo a {
-    display: block;
-    position: absolute;
-    font-family: Dorsa;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 70px;
-    color: #263555;
-    left: 16%;
-    top: 24%;
-}
-
-li {
-    list-style: none;
-}
-
 .submenu {
-   /* display: none;*/
-}
-
-.submenu  {
-    color: rgb(175, 159, 159);
-    font-size: 18px;
-}
-
- nav:hover .submenu {
-    display: block;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    left: -9999px;
     width: 80px;
     height: auto;
-    border-radius: 8px;
-    background: #fff;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    left: 150px;
-    top: 145px;
-    padding-top: 10px;
-    z-index: 10;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: rgb(226, 214, 214);
 }
-
-  nav:hover .submenu::before {
-    content: '';
+.submenu::before{
+    content: "";
     position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 5px solid white;
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px solid rgb(226, 214, 214);
+    border-top:5px solid transparent;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid transparent;
+    top:-10px;
+    left: 36px;
+
+}
+
+.menu_left li:hover>.submenu {
     display: block;
-    top: -9px;
-    left: 35px;
+    left: 0;
+    text-align: center;
+    font-family: Pathway Gothic One;
+}
+
+.submenu a {
+    color: #fff;
+}
+
+section{
+    display: flex;
+    padding-top:60px; 
+ 
+    width:100%;
+    height:auto;
+    background: #fff;
+    font-family:Pathway Gothic One;
+    text-transform:uppercase;
+    font-size:30px;
+       
+}
+section h4{
+    display: block;
+    padding-left:50px;
+    font-family: Pathway Gothic One;
+    color: #263555;
+    text-decoration:none;  
+
 }
 
 .main {
-   
-}
-
-
-
-.first {
-    /* display:flex;*/
-    padding: 10px 10px;
-}
-.first:hover{
-
-    opacity:0.5;
-    cursor:url(https://image.ibb.co/nLPWub/icon.png);
-     
-}
-
-
-
-.text {
-    display: block;
-    width: auto;
-    height: auto;
-    left: 40px;
-    top: 5px;
-    background: #fff;
-    position: absolute;
-    font-size: 30px;
-    font-family: Pathway Gothic One;
-    color: #263555;
-}
-
-footer {
-    margin: auto;
-    max-width: 1024px;
-    height: 200px;
-    background: #263555;
-    padding-top: 30px;
-}
-
-.info {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    width: auto;
-    padding-top: 30px;
-    margin: auto;
+    padding: 30px;
+    background: white;
 }
 
+.figure {
+    padding: 15px 0;
+}
+.info{
+    display:flex;
+    flex-direction:row;
+
+    width: 100%;
+    height:200px ;
+    background: #30455b;
+    
+
+
+}
 .contact a {
     display: flex;
     flex-direction: row;
@@ -219,51 +211,57 @@ footer {
     color: #fff;
 }
 
-.menu {
+.sprit {
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-bottom:40px; 
+    padding-bottom: 40px;
+    margin-top: 20px;
 }
 
-.menu li {
+.sprit li {
     float: left;
     list-style: none;
     margin-right: 10px;
 }
-
-.menu a {
+.sprit a {
     display: block;
     height: 40px;
     width: 40px;
     background: url(https://image.ibb.co/ciwTsb/sprite_social_buttons.png)0 0 no-repeat;
 }
 
-.menu .google {
+.sprit .google {
     background-position: -41px 0;
 }
 
-.menu .init {
+.sprit .init {
     background-position: -82px 0;
 }
 
-.menu .twitter {
+.sprit .twitter {
     background-position: -123px 0;
 }
 
-.menu a:hover {
+.sprit a:hover {
     background-position: 0 -40px;
 }
 
-.menu .google:hover {
+.sprit .google:hover {
     background-position: -41px -40px;
 }
 
-.menu .init:hover {
+.sprit .init:hover {
     background-position: -82px -40px;
 }
 
-.menu .twitter:hover {
+.sprit .twitter:hover {
     background-position: -123px -40px;
+}
+.text{
+    display:flex ;
+    justify-content: center;
+    color:#fff;
+    
 }
